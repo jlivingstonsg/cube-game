@@ -43,7 +43,7 @@ var SPEED_MAP = {
 var AUTOFALL_DELAY = SPEED_MAP[SPEED];
 
 // animation
-var ANIM_DURATION = 150;
+var ANIM_DURATION = 10;
 var FRAME_DELAY = 10;
 
 var DELTA = 1;
@@ -636,8 +636,8 @@ function point3d(ctx, cwidth, cheight, width, height, s, color, radius) {
 function draw_pit(canvas, ctx, width, height, depth, refresh_flag) {
   if (CACHE_PIT == 0 || refresh_flag) {
     // colors
-    var color1 = '#555555'; // gradient start
-    var color2 = '#000000'; // gradient end
+    var color1 = '#8bfc44'; // gradient start
+    var color2 = '#81f736'; // gradient end
     var bgcolor = BG_COLOR; // pit background
 
     var cwidth = canvas.width;
